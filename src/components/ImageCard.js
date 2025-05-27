@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const ImageCard = ({ image }) => {
+
     const tags = image.tags.split(',').slice(0, 3);
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
