@@ -1,35 +1,39 @@
 import React, { useState } from 'react';
-
+import { Search } from 'lucide-react';
 
 const ImageSearch = ({ searchText }) => {
-    const [text, setText] = useState('');
+  const [text, setText] = useState('');
 
-    const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
     searchText(text);
-    }
+  };
+
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg mx-auto mt-10'>
-      <form onSubmit={onSubmit} className='w-full max-w-sm'>
-        <div className='flex items-center border-b border-teal-500 py-2'>
-          <input onChange ={e => setText(e.target.value)}
-            className='appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none'
-            type='text'
-            placeholder='Search for images...'
-            aria-label='Search'
-          />
-          <button
-            className='flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded'
-            type='submit'
-          >
-            Search
-          </button>
-        </div>
+    <div className="max-w-xl mx-auto">
+      <form 
+        onSubmit={handleSubmit} 
+        className="flex items-center p-2 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <Search className="ml-2 text-gray-500 dark:text-gray-400" size={20} />
+        <input
+          type="text"
+          className="w-full px-4 py-2 focus:outline-none bg-transparent text-gray-800 dark:text-gray-200 placeholder-gray-500 dark:placeholder-gray-400"
+          placeholder="Search for images..."
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          aria-label="Search for images"
+        />
+        <button
+          type="submit"
+          className="px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-md transition-colors duration-300 ml-2"
+          aria-label="Search"
+        >
+          Search
+        </button>
       </form>
-
     </div>
-  )
-}
+  );
+};
 
-export default ImageSearch
+export default ImageSearch;
