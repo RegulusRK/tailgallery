@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🌄 TailGallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**TailGallery** is a responsive image gallery built with **React**, **HTML**, **CSS**, and **Tailwind CSS**. Inspired by platforms like Pixabay, it features a clean layout, modern design, and full support for **dark mode**, providing an excellent experience across both desktop and mobile devices.
 
-## Available Scripts
+--
 
-In the project directory, you can run:
+## 📸 Preview
 
-### `npm start`
+### Light Mode
+![Light Mode](./path/to/screenshot1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dark Mode
+![Dark Mode](./path/to/screenshot2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔗 Live Demo
 
-### `npm test`
+👉 [Check out the live version here](https://regulusrk.github.io/tailgallery/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 💡 Fully responsive layout
+- 🌙 Light and Dark mode support
+- 🧩 Component-based architecture
+- 🎨 Tailwind CSS for styling
+- 📱 Mobile-first optimization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```bash
+tailgallery/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📦 Installation
+Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+git clone https://github.com/RegulusRK/tailgallery.git
+Navigate into the project folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1°
+cd tailgallery
+Install the dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2°
+npm install
+Start the development server:
 
-## Learn More
+3°
+npm start
+Open http://localhost:3000 to view the app in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🌗 Theme Switching
+TailGallery automatically detects the user's system theme and applies light or dark mode accordingly. Manual switching can be implemented using context or a custom hook.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📌 Project Status
+✅ Actively developed – new features and improvements coming soon!
 
-### Code Splitting
+📄 License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🤝 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-### Analyzing the Bundle Size
+📬 Contact
+Developed by RegulusRK
+📧 rafaelcris022@gmail.com
+🔗 www.linkedin.com/in/rafael-cristino022
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
