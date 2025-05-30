@@ -7,10 +7,10 @@
 ## 📸 Preview
 
 ### Light Mode
-![Light Mode](./path/to/screenshot1.png)
+![Light Mode](./src/assets/screenshots/screenshot-2.png)
 
 ### Dark Mode
-![Dark Mode](./path/to/screenshot2.png)
+![Dark Mode](./src/assets/screenshots/screenshot-1.png)
 
 ## 🔗 Live Demo
 
